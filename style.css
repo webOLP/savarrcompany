@@ -25,7 +25,7 @@
     top: 0;
     right: -420px;
     background-color:#585858;
-    padding: 55px 20px 0;
+    padding: 45px 20px 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -84,6 +84,10 @@
 
 .menu__title:hover, .menu__subtitle:hover {
     color: #CA1E1E;
+}
+
+.menu__arrow {
+    height: 55px;
 }
 
 .header {
