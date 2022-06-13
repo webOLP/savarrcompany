@@ -23,7 +23,7 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    right: -420px;
+    right: -435px;
     background-color:#585858;
     padding: 45px 20px 0;
     box-sizing: border-box;
@@ -356,8 +356,8 @@
 
 .card {
     width: 50px;
-    max-width: 320px;
-    height: 350px;
+    max-width: 360px;
+    height: 390px;
     position: relative;
     flex-grow: 1;
     display: flex;
@@ -369,8 +369,7 @@
 
 
 .card__image {
-    margin-top: 30px;
-    max-width: 90%;
+    max-width: 330px;
     max-height: 288px;
 
 }
@@ -385,6 +384,7 @@
     line-height: 58px;
     text-align: center;
     color: #000000;
+    align-self: center;
 }
 
 .card__info {
@@ -394,7 +394,7 @@
     font-weight: 400;
     text-align: justify;
     opacity: 0;
-    transition: visibility 0s, opacity 0s .4s, height .3s .7s;
+    transition: visibility 0s, opacity 0s .6s, height .3s .8s;
     visibility: hidden;
     height: 0;
     margin: 0;
@@ -404,32 +404,33 @@
     padding: 10px;
     flex-grow: 3;
     max-width: 800px;
-    height: 350px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    height: 390px;
+    flex-direction: column;
     align-items: flex-start;
     border-radius: 15px;
     box-shadow: 0 0 20px -5px;
+    box-sizing: border-box;
+
 }
 
 .card:hover .card__image {
-    order: 3;
-    width: 288px;
+    max-height: auto;
     margin: 0;
+    position: relative;
+    top: -25px;
 }
 
 .card:hover .card__text {
-    width: 50%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card:hover .card__title {
-    order: 1;
     margin-bottom: 15px;
 }
 
 .card:hover .card__info {
-    order: 2;
-    width: 100%;    
+    width: 55%;    
     opacity: 1;
     visibility: visible;
     height: auto;
@@ -474,7 +475,7 @@
     box-sizing: border-box;
     max-width: 100%;    
     cursor: pointer;
-    transition: transform .4s ease;
+    transition: transform .4s ease ;
 
 }
 
