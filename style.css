@@ -60,6 +60,7 @@
     text-transform: uppercase;
     margin: 0 0 15px;
     transition: color .4s linear;
+    cursor: pointer;
 }
 
 .menu__card {
@@ -78,6 +79,7 @@
     text-transform: uppercase;
     margin: 0 0 10px;
     transition: color .3s linear;
+    cursor: pointer;
 }
 
 .menu__title:hover, .menu__subtitle:hover {
