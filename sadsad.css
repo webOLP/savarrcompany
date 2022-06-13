@@ -1,0 +1,33 @@
+.contacts {
+    display: flex;
+    max-width: 100%;
+    padding: 70px 190px 70px;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.contacts__card {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__title {
+    width: 100%;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 78px;
+    text-align: justify;
+    color: #000000;
+    border-bottom: 10px solid black;
+}
+
+.contacts__adress {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: justify;
+    color: #000000;
+}
