@@ -7,45 +7,21 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="popup-background">
-      <div class="forms-popup">
-        <h2 class="forms-popup__title">Свяжитесь с нами !</h2>
-        <h4 class="forms-popup__subtitle">
-          Мы к Вашим услугам по любому вопросу. Отправьте свое сообщение, и мы
-          свяжемся с Вами как можно скорее.
-        </h4>
-        <form class="form-popup">
-          <label class="form__card"
-            >Имя
-            <input type="text" placeholder="Иван" class="form__input" />
-          </label>
-          <label class="form__card"
-            >Фамилия
-            <input type="text" placeholder="Иванов" class="form__input" />
-          </label>
-          <label class="form__card"
-            >Номер телефона
-            <input type="tel" placeholder="+7999xxx9x9x" class="form__input" />
-          </label>
-          <label class="form__card"
-            >Адрес электронной почты
-            <input
-              type="email"
-              placeholder="example@example.com"
-              class="form__input"
-            />
-          </label>
-          <label class="form__card"
-            >Ваше сообщение
-            <textarea
-              type="text"
-              placeholder="Здравствуйте!"
-              class="form__input"
-            ></textarea>
-          </label>
-          <button class="form__button">Послать запрос на контакт</button>
-        </form>
-      </div>
+    <div style="position: relative; overflow: hidden">
+      <a
+        href="https://yandex.ru/maps/18/petrozavodsk/?utm_medium=mapframe&utm_source=maps"
+        style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+        >Петрозаводск</a
+      ><a
+        href="https://yandex.ru/maps/18/petrozavodsk/house/shuyskoye_shosse_2a_24/Z00YdA5iQEIHQFhrfXRxeHljZw==/?ll=34.295446%2C61.809560&utm_medium=mapframe&utm_source=maps&z=16.2"
+        style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+        >Шуйское шоссе, 2А/24 — Яндекс Карты</a
+      ><iframe
+        src="https://yandex.ru/map-widget/v1/-/CCUJjVgnpA"
+        allowfullscreen="true"
+        style="position: relative"
+        class="map__window"
+      ></iframe>
     </div>
   </body>
 </html>

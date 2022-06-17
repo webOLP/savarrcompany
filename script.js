@@ -14,6 +14,7 @@ function textFutureTitle() {
 
 function popupActive() {
     popupWindow.classList.add('popup-background_active');
+    document.querySelector('.page').style.overflow = 'hidden';
 }
 
 function popupClose(event) {
@@ -21,6 +22,7 @@ function popupClose(event) {
     console.log(event.currentTarget, event.target)
     if( (event.target === event.currentTarget) || event.target === popupWindow.querySelector('.form-popup__button')) {
         popupWindow.classList.remove('popup-background_active')
+        document.querySelector('.page').style.overflow = 'auto';
     }
     
 }
