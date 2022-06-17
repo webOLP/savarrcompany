@@ -1,33 +1,88 @@
-.contacts {
-    display: flex;
-    max-width: 100%;
-    padding: 70px 190px 70px;
-    justify-content: space-evenly;
-    box-sizing: border-box;
-}
-
-.contacts__card {
-    width: 45%;
+.forms-popup {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 80px 0 50px;
 }
 
-.contacts__title {
-    width: 100%;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 78px;
-    text-align: justify;
-    color: #000000;
-    border-bottom: 10px solid black;
-}
-
-.contacts__adress {
+.forms-popup__title {
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
     text-align: justify;
     color: #000000;
+    margin: 0 0 13px;
+}
+
+.forms-popup__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+    color: #000000;
+    margin: 0 0 60px;
+}
+
+.form-popup {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1180px;
+}
+
+.form-popup__card {
+    width: 425px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 60px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+    color: #000000;
+
+}
+
+.form-popup__card:nth-child(5) {
+    width: 1100px;
+}
+
+.form-popup__input {
+    margin-top: 11px;
+    height: 90px;
+    background-color: #BEBDBD;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    transition: transform-popup .4s ease;
+}
+
+.form-popup__button {
+    width: 503px;
+    height: 118px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #CA1E1E;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 29px;
+    line-height: 35px;
+    text-align: justify;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: transform-popup .4s ease;
+}
+
+button:hover {
+    transform-popup: scale(1.03);
 }

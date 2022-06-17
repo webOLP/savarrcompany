@@ -1110,6 +1110,110 @@
     transition: transform .4s ease;
 }
 
+.popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.popup-background_active {
+    display: flex;
+}
+
+.forms-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    width: 1600px;
+    height: 80%;
+    background-color: white;
+}
+
+.forms-popup__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: justify;
+    color: #000000;
+    margin: 0 0 13px;
+}
+
+.forms-popup__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+    color: #000000;
+    margin: 0 0 30px;
+}
+
+.form-popup {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1180px;
+}
+
+.form-popup__card {
+    width: 425px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+    color: #000000;
+
+}
+
+.form-popup__card:nth-child(5) {
+    width: 1100px;
+}
+
+.form-popup__input {
+    margin-top: 11px;
+    height: 90px;
+    background-color: #BEBDBD;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    transition: transform-popup .4s ease;
+}
+
+.form-popup__button {
+    width: 503px;
+    height: 118px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #CA1E1E;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 29px;
+    line-height: 35px;
+    text-align: justify;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: transform-popup .4s ease;
+}
+
 button:hover {
     transform: scale(1.03);
 }
