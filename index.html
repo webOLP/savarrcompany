@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="page">
+  <body id="up"  class="page">
     <header class="header">
       <video
         src="./images/video1.mp4"
@@ -22,7 +22,7 @@
       <h1 class="header__title">Savarr</h1>
       </div>
     </header>
-    <div class="content">
+    <div id="content" class="content">
       <div class="content__background"></div>
       <section class="future">
         <h2 class="future__title">Будущее уже здесь</h2>
@@ -40,7 +40,7 @@
           <button class="results__button call-popup">УЗНАТЬ БОЛЬШЕ</button>
         </div>
       </section>
-      <section class="optimisation">
+      <section id="optimisation" class="optimisation">
         <div class="optimisation__decor"></div>
         <div class="optimisation__text">
           <h3 class="optimisation__subtitle">
@@ -61,7 +61,7 @@
         </div>
         <div class="optimisation__image-block"></div>
       </section>
-      <section class="scanners">
+      <section id="scanners" class="scanners">
         <h2 class="scanners__title">СКАНЕРЫ ДЛЯ БРЕВЕН</h2>
         <div class="cards">
           <div class="card">
@@ -123,7 +123,7 @@
           </button>
         </div>
       </section>
-      <section class="sorting">
+      <section id="sorting" class="sorting">
         <h2 class="sorting__title">СОРТИРОВКА КРУГЛЫХ ЛЕСОМАТЕРИАЛОВ</h2>
         <div class="cards">
           <div class="card">
@@ -154,7 +154,7 @@
           </div>
         </div>
       </section>
-      <section class="environ">
+      <section id="environ" class="environ">
         <h2 class="environ__title">Операционная среда</h2>
         <div class="environ__content">
           <img src="./images/environ.png" alt="" class="environ__image" />
@@ -176,7 +176,7 @@
           </div>
         </div>
       </section>
-      <section class="control">
+      <section id="control" class="control">
         <div class="control__decor"></div>
         <div class="control__text">
           <h3 class="control__subtitle">
@@ -192,7 +192,7 @@
         </div>
         <div class="control__image-block"></div>
       </section>
-      <section class="storage">
+      <section id="storage" class="storage">
         <h2 class="storage__title">
           ОПТИМИЗИРУЙТЕ НАВИГАЦИЮ И УПРАВЛЕНИЕ СКЛАДАМИ
         </h2>
@@ -214,7 +214,7 @@
           </p>
         </div>
       </section>
-      <section class="company">
+      <section id="company" class="company">
         <div class="company__decor"></div>
         <div class="company__text">
           <h3 class="company__subtitle">Компания</h3>
@@ -231,7 +231,7 @@
         </div>
         <div class="company__image-block"></div>
       </section>
-      <section class="mission">
+      <section id="mission" class="mission">
         <div class="mission__text">
           <h2 class="mission__title">У НАС ОДНА МИССИЯ</h2>
           <p class="mission__paragraph">
@@ -257,7 +257,7 @@
         </div>
         <img src="./images/mission__gif.gif" alt="" class="mission__image" />
       </section>
-      <section class="way">
+      <section id="way" class="way">
         <div class="way__titles">
           <h4 class="way__subtitle">Компания</h4>
           <h2 class="way__title">
@@ -296,7 +296,7 @@
           </p>
         </div>
       </section>
-      <section class="activity">
+      <section id="activity" class="activity">
         <h2 class="activity__title">
           НАША ДЕЯТЕЛЬНОСТЬ СТРОИТСЯ НА СЛЕДУЮЩИХ ОСНОВНЫХ ПРИНЦИПАХ:
         </h2>
@@ -357,7 +357,7 @@
           class="activity__image"
         />
       </section>
-      <section class="contacts">
+      <section id="contacts" class="contacts">
         <div class="contacts__card">
           <h2 class="contacts__title">АДРЕС</h2>
           <p class="contacts__adress">Tukkikatu 5 53900 Lappeenranta</p>
@@ -369,7 +369,7 @@
           <p class="contacts__adress">7(499)955-39-94</p>
         </div>
       </section>
-      <section class="map">
+      <section id="map" class="map">
         <div style="position: relative; overflow: hidden">
           <a
             href="https://yandex.ru/maps/18/petrozavodsk/?utm_medium=mapframe&utm_source=maps"
@@ -429,27 +429,24 @@
     </div>
     <div class="menu">
         <img src="./images/menu__label.svg" alt="" class="menu__label">
-        <h3 class="menu__title">Главная </h3>
         <div class="menu__card">
-            <h3 class="menu__title">Каталог</h3>
-            <h4 class="menu__subtitle">Сканеры для бревен</h4>
-            <h4 class="menu__subtitle">сортировка круглых лесоматериалов</h4>
-            <h4 class="menu__subtitle">Операционная среда</h4>
-            <h4 class="menu__subtitle">Оптимизация</h4>
+            <a href="#scanners" class="menu__link"><h4 class="menu__subtitle">Сканеры для бревен</h4></a>
+            <a href="#sorting" class="menu__link"><h4 class="menu__subtitle">сортировка круглых лесоматериалов</h4></a>
+            <a href="#environ" class="menu__link"><h4 class="menu__subtitle">Операционная среда</h4></a>
+            <a href="#storage" class="menu__link"><h4 class="menu__subtitle">Оптимизация</h4></a>
         </div>
         <div class="menu__card">
-            <h3 class="menu__title">О нас</h3>
-            <h4 class="menu__subtitle">миссия</h4>
-            <h4 class="menu__subtitle">О компании</h4>
-            <h4 class="menu__subtitle">Деятельность</h4>
+          <a href="#company" class="menu__link"><h4 class="menu__subtitle">О нас</h4></a>
+          <a href="#mission" class="menu__link"><h4 class="menu__subtitle">миссия</h4></a>
+          <a href="#way" class="menu__link"><h4 class="menu__subtitle">О компании</h4></a>
+          <a href="#activity" class="menu__link"><h4 class="menu__subtitle">Деятельность</h4></a>
         </div>
         <div class="menu__card">
-            <h3 class="menu__title">Контакты</h3>
-            <h4 class="menu__subtitle">Адрес</h4>
-            <h4 class="menu__subtitle">Карта</h4>
-            <h4 class="menu__subtitle">Связь с нами</h4>
+          <a href="#contacts" class="menu__link"><h4 class="menu__subtitle">Адрес</h4></a>
+          <a href="#map" class="menu__link"><h4 class="menu__subtitle">Карта</h4></a>
+          <a href="#forms" class="menu__link"><h4 class="menu__subtitle">Связь с нами</h4></a>
         </div>
-        <a href=""><img src="./images/menu__arrow.svg" alt="" class="menu__arrow"></a>
+        <a href="#up" class="menu__link"><img src="./images/menu__arrow.svg" alt="" class="menu__arrow"></a>
     </div>
     <footer class="footer"></footer>
     <div class="popup-background">

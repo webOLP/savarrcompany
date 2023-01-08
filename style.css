@@ -11,6 +11,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
+*{scroll-behavior: smooth; } 
 
 .page {
     width: 100%;
@@ -23,13 +24,14 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    right: -435px;
+    right: -450px;
     background-color:#585858;
     padding: 45px 20px 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     transition: right .5s ease;
 }
 
@@ -39,6 +41,7 @@
 
 .menu:hover .menu__label {
     left: 0;
+    opacity: 0.1;
 }
 
 .menu__label {
@@ -48,6 +51,10 @@
     height: 160px;
     z-index: -3;
     transition: left .3s .1s;
+}
+
+.menu__link {
+    text-decoration: none;
 }
 
 .menu__title {
